@@ -50,8 +50,8 @@ def main(argv=None, stdout=None, stdin=None):
         '-s', '--scale', default=1, type=float, help='output scaling factor')
     parser.add_argument(
         '-u', '--unsafe', action='store_true',
-        help='fetch external files, resolve XML entities and allow very large '
-             'files (WARNING: vulnerable to XXE attacks and various DoS)')
+        help='resolve XML entities and allow very large files '
+             '(WARNING: vulnerable to XXE attacks and various DoS)')
     parser.add_argument(
         '--output-width', default=None, type=float,
         help='desired output width in pixels')
